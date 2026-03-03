@@ -1,11 +1,11 @@
-👋 Hi, I'm CaptainDream_
+## 👋 Hi, I'm CaptainDream_
 🚀 Minecraft Server Developer & Configurator
 
 I specialize in creating high-performance, scalable, and feature-rich Minecraft servers. From complete gamemode setups to advanced plugin configurations, I help communities launch professional-grade servers with clean structure, optimization, and stability.
 
 --------------------------------------------
 
-🛠️ What I Do?
+# 🛠️ What I Do?
 
 ⚙️ Full Server Setup (A–Z)
 
@@ -30,7 +30,7 @@ I specialize in creating high-performance, scalable, and feature-rich Minecraft 
 
 ---------------------------------------------
 
-🖥️ Technical Stack?
+# 🖥️ Technical Stack?
 
 Java-based server software (Paper / Purpur / Spigot)
 
