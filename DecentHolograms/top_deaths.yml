@@ -1,0 +1,40 @@
+location: spawn:6.500:126.500:-63.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: RED_DYE'
+    height: 0.6
+  - content: '&#FF3636&lᴛᴏᴘ ᴅᴇᴀᴛʜs'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#FF3636#1 &7| &f%ajlb_lb_statistic_deaths_1_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_1_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#2 &7| &f%ajlb_lb_statistic_deaths_2_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_2_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#3 &7| &f%ajlb_lb_statistic_deaths_3_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_3_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#4 &7| &f%ajlb_lb_statistic_deaths_4_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_4_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#5 &7| &f%ajlb_lb_statistic_deaths_5_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_5_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#6 &7| &f%ajlb_lb_statistic_deaths_6_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_6_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#7 &7| &f%ajlb_lb_statistic_deaths_7_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_7_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#8 &7| &f%ajlb_lb_statistic_deaths_8_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_8_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#9 &7| &f%ajlb_lb_statistic_deaths_9_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_9_alltime_value%'
+    height: 0.3
+  - content: '#FF3636#10 &7| &f%ajlb_lb_statistic_deaths_10_alltime_name%: #FF3636%ajlb_lb_statistic_deaths_10_alltime_value%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '#FF3636#%ajlb_position_statistic_deaths_alltime% &7| &f%player_name%: #FF3636%ajlb_value_statistic_deaths_alltime%'
+    height: 0.3
+  actions: {}
