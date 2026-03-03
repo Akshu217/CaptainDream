@@ -1,0 +1,504 @@
+size: 45
+menu_title: 'Particles'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 40
+    display_name: "&cGo Back"
+    click_commands:
+      - "[openguimenu] coinshop"
+
+  'snowcloud':
+    material: SNOWBALL
+    slot: 10
+    priority: 1
+    display_name: "&#FFD155&lSnow Cloud"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.snowcloud'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSnow Cloud &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'bloodhelix':
+    material: FERMENTED_SPIDER_EYE
+    slot: 11
+    priority: 1
+    display_name: "&#FFD155&lBlood Helix"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.bloodhelix'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fBlood Helix &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+  'frostlord':
+    material: SNOW_BLOCK
+    slot: 12
+    priority: 1
+    display_name: "&#FFD155&lFrost Lord"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.frostlord'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fFrost Lord &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+  'flamerings':
+    material: FIRE_CHARGE
+    slot: 13
+    priority: 1
+    display_name: "&#FFD155&lFlame Rings"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.flamerings'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fFlame Rings &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+  'greensparks':
+    material: EMERALD
+    slot: 14
+    priority: 1
+    display_name: "&#FFD155&lGreen Sparks"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.greensparks'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGreen Sparks &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'frozenwalk':
+    material: SNOW
+    slot: 15
+    priority: 1
+    display_name: "&#FFD155&lFrozen Walk"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.frozenwalk'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fFrozen Walk &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+  'music':
+    material: MUSIC_DISC_CHIRP
+    slot: 16
+    priority: 1
+    display_name: "&#FFD155&lMusic"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.music'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fMusic &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'inferno':
+    material: CAMPFIRE
+    slot: 19
+    priority: 1
+    display_name: "&#FFD155&lInferno"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.inferno'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fInferno &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'angelwings':
+    material: FEATHER
+    slot: 20
+    priority: 1
+    display_name: "&#FFD155&lAngel Wings"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.angelwings'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fAngel Wings &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'superhero':
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 21
+    priority: 1
+    display_name: "&#FFD155&lSuperhero"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.superhero'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSuperhero &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'santahat':
+    material: IRON_HELMET
+    slot: 21
+    priority: 1
+    display_name: "&#FFD155&lSanta Hat"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.santahat'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSanta Hat &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'enderaura':
+    material: ENDER_PEARL
+    slot: 22
+    priority: 1
+    display_name: "&#FFD155&lEnder Aura"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.enderaura'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fEnder Aura &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'crushedcandycane':
+    material: GLOW_BERRIES
+    slot: 23
+    priority: 1
+    display_name: "&#FFD155&lCrushed Candy Cane"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.crushedcandycane'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fCrushed Candy Cane &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'inlove':
+    material: RED_DYE
+    slot: 24
+    priority: 1
+    display_name: "&#FFD155&lIn Love"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.inlove'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fIn Love &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+  'magicalrods':
+    material: BLAZE_ROD
+    slot: 25
+    priority: 1
+    display_name: "&#FFD155&lMagical Rods"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.particleeffects.magicalrods'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fMagical Rods &#7AFE77Particle Effect!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'

@@ -1,0 +1,330 @@
+size: 45
+menu_title: 'Emotes'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 40
+    display_name: "&cGo Back"
+    click_commands:
+      - "[openguimenu] coinshop"
+
+  'cry':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWYxYjg3NWRlNDljNTg3ZTNiNDAyM2NlMjRkNDcyZmYyNzU4M2ExZjA1NGYzN2U3M2ExMTU0YjViNTQ5OCJ9fX0=
+    slot: 11
+    priority: 1
+    display_name: "&#FF55E1&lCry"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.cry'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fCry &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+
+  'angry':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZiOTdiMTdjNjM5NTM5MjY1OGYzMjcxOGFhNDZiZWZhMWMzMWQzNTcyNjUxYzMwZjdkMmJmM2I5M2Y2ZWFkOSJ9fX0=
+    slot: 12
+    priority: 1
+    display_name: "&#FF55E1&lAngry"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.angry'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fAngry &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'happy':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMDFiOWRlZjU1ODc2YzQxYzE3YzgxNWY4ODExNWYwMmM5NWY4OTYyMGZiZWQ2YTZjYjJkMzhkNDZmZTA1In19fQ==
+    slot: 13
+    priority: 1
+    display_name: "&#FF55E1&lHappy"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.happy'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fHappy &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'cheeky':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxNWM5YjhlZGM1NjI5YjZjYWE0OTE0OGEyMGM1ODkwODUzYzI2NzQzODVlNDM4NzZjYTU2ZDFkNDY1ZiJ9fX0=
+    slot: 14
+    priority: 1
+    display_name: "&#FF55E1&lCheeky"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.cheeky'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fCheeky &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'love':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI3MzdlOTllNGMwNTk2YTM3MTJlNzcxMWJhZWNhZThkMWRkYjc3NGFjMWNmNTMxODk2ODYyMzgwNzUzZTE2In19fQ==
+    slot: 15
+    priority: 1
+    display_name: "&#FF55E1&lLove"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.love'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fLove &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'dealwithit':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQyMTc1ZWJlOWFlMGUxYTY1OGQ5YWY4MmRhY2ZiODM2OTA1MmQ4MTIxZDRlYTM4ODY3MzhhMWNjYTUifX19
+    slot: 20
+    priority: 1
+    display_name: "&#FF55E1&lDeal with it"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.dealwithit'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDeal with it &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'cool':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcxYTY2MTY0ODk2ZGNkOGIxN2JmZTliYmY1ZTFlOGM0M2FmYmJkN2M3ZTQyYjc1MTQ4M2M5YzQ2OGU1MiJ9fX0=
+    slot: 21
+    priority: 1
+    display_name: "&#FF55E1&lCool"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.cool'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fCool &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'suprised':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU4Njg1MjlmYmY0YmU2MjkzNzEyNzViMTEzOGRhYjkyOTU3NjAyMTcxNmVlNzM3ZGIxMjYzNGFhMTI1YWYzIn19fQ==
+    slot: 22
+    priority: 1
+    display_name: "&#FF55E1&lSuprised"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.surprized'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSurprized &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+
+
+
+
+  'wink':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRlYTJkNmY5MzlmZWZlZmY1ZDEyMmU2M2RkMjZmYThhNDI3ZGY5MGIyOTI4YmMxZmE4OWE4MjUyYTdlIn19fQ==
+    slot: 23
+    priority: 1
+    display_name: "&#FF55E1&lWink"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] ultracosmetics.emotes.wink'
+      - '[console] points take %player_name% 500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fWink &#7AFE77Emote!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+

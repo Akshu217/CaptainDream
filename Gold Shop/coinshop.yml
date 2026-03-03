@@ -1,0 +1,183 @@
+open_command: 'coinshop'
+register_command: true
+size: 45
+menu_title: 'Coin Shop'
+
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+
+
+  'main':
+    material: SUNFLOWER
+    data: 1
+    slot: 12
+    display_name: "&#ffeb14&lCoins Information"
+    lore:
+      - "&8Coinshop Information"
+      - ""
+      - "&fYou have &#ffeb14%playerpoints_points_formatted% &fcoins"
+      - ""
+      - "&#ffeb14What are coins?"
+      - "&fCoins are a virtual currency used to"
+      - "&fbuy chat colors & crate keys."
+      - ""
+      - "&#ffeb14How can I obtain Coins?"
+      - "&fYou can buy coins from our webstore or"
+      - "&fwin them from crates"
+
+  'store':
+    material: MAP
+    data: 1
+    slot: 14
+    display_name: "&#00d400Webstore Link"
+    lore:
+      - "&8Coinshop Information"
+      - ""
+      - "&fWant to buy coins?"
+      - "&fCheck out the webstore!"
+      - ""
+      - "&e&l➥ CLICK FOR STORE"
+
+    click_commands:
+      - '[message]  '
+      - '[message]  '
+      - '[message] &#8BF8FFVisit the webstone to top up on coins!'
+      - '[message]  '
+      - '[message] &#8BF8FF➥ &lSTORE.EXAMPLE.NET'
+      - '[message]  '
+      - '[message]  '
+      - '[close]'
+
+  'player-tags':
+    material: NAME_TAG
+    data: 1
+    slot: 28
+    display_name: "&#F266FF&lPlayer Tags"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fPlayer Tags will display next"
+      - "&fto you name in chat."
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[openmenu] coinshop-playertags'
+
+  'crate-keys':
+    material: TRIPWIRE_HOOK
+    data: 1
+    slot: 29
+    display_name: "&#66DDFF&lCrate Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fCrate keys are used to"
+      - "&fopen crates for a reward."
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[openmenu] coinshop-cratekeys'
+
+  'chat-colors':
+    material: LIME_DYE
+    data: 1
+    slot: 30
+    display_name: "&#78FF59&lChat Colors"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fChat with style with cool"
+      - "&fchat colors!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[openmenu] coinshop-chatcolors'
+
+  'ranks':
+    material: BOOK
+    data: 1
+    slot: 31
+    display_name: "&#FF5E5E&lLifesteal Ranks"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fRanks are the best way to"
+      - "&fget perks on the server!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[openmenu] coinshop-ranks'
+
+  'particles':
+    material: NETHER_STAR
+    slot: 32
+    display_name: "&#FFD155&lParticles"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fPurchase particles to show off"
+      - "&fto your friends!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+    click_commands:
+      - '[openguimenu] coinshop-particles'
+
+  'emotes':
+    material: PUFFERFISH
+    slot: 33
+    display_name: "&#FF55E1&lEmotes"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fShow off your expressions"
+      - "&fin-game!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+    click_commands:
+      - '[openguimenu] coinshop-emotes'
+
+  'pets':
+    material: PARROT_SPAWN_EGG
+    slot: 34
+    display_name: "&#41ACFF&lPets"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fSpawn cute pets to follow you"
+      - "&faround!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+    click_commands:
+      - '[openguimenu] coinshop-pets'
