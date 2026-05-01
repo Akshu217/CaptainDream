@@ -1,0 +1,47 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: TOTEM_OF_UNDYING
+        displayname: '&fTotem'
+        buy: 1500.0
+        sell: -1.0
+      '2':
+        material: ENCHANTED_GOLDEN_APPLE
+        displayname: '&fGolden Apple'
+        buy: 5000.0
+        sell: -1.0
+      '3':
+        material: ENDER_CHEST
+        displayname: '&fEnderChest'
+        buy: 500.0
+        sell: -1.0
+      '4':
+        material: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+        displayname: '&fSmithing Template'
+        buy: 4000.0
+        sell: -1.0
+      '5':
+        material: EXPERIENCE_BOTTLE
+        buy: 2000.0
+        sell: -1.0
+        stack-size: 64
+      '6':
+        material: OBSIDIAN
+        buy: 3000.0
+        sell: -1.0
+        stack-size: 16
+      '7':
+        material: END_CRYSTAL
+        buy: 4000.0
+        sell: -1.0
+        stack-size: 16
+      '8':
+        material: ENDER_PEARL
+        buy: 300.0
+        sell: -1.0
+        stack-size: 16
+      '9':
+        material: SHULKER_BOX
+        buy: 3000.0
+        sell: -1.0

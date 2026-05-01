@@ -1,0 +1,231 @@
+header-footer:
+  enabled: true
+  designs:
+    default:
+      header:
+        - '&c&lTEST SERVER'
+        - '&7ᴄᴏɴꜰɪɢᴜʀᴀᴛᴏʀ.ᴀᴘᴘʟʏ'
+        - ''
+        - '&7Online Players: &f%staffvanish_online%'
+        - ''
+      footer:
+        - ''
+        - '&7Purchase &6&lGOLD&7, &d&lRANK &7and &e&lAMAZING PERKS!'
+        - '&fVisit our &b&lSTORE &fnow at &bᴄᴀᴘᴛᴀɪɴ.ꜱᴛᴏʀᴇ!'
+        - ''
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: false
+  invisible-nametags: false
+  sorting-types:
+  - GROUPS:founder,manager,admin,leaddev,developer,mod,tester,twitch,youtube,creator,custom,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+playerlist-objective:
+  enabled: false
+  value: '%ping%'
+  fancy-value: '&7Ping: %ping%'
+  title: TAB
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+belowname-objective:
+  enabled: false
+  value: '%health%'
+  fancy-value: '&c%health%'
+  fancy-value-default: NPC
+  title: '&cHealth'
+  disable-condition: '%world%=disabledworld'
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  delay-on-join-milliseconds: 2000
+  scoreboards:
+    VanishSMP:
+      title: '&c&lTEST SERVER'
+      lines:
+      - ''
+      - '&#8144FA| &fName: %vcolor_name%%player%'
+      - '&#8144FA| &fRank: %luckperms_prefix%'
+      - ''
+      - '&#8144FA| &c☄ &fMoney: &#94FF00%vault_eco_balance_formatted%'
+      - '&#8144FA| &c☄ &fKills: &#94FF00%statistic_player_kills%'
+      - '&#8144FA| &c☄ &fDeaths: &#94FF00%statistic_deaths%'
+      - '&#8144FA| &c☠ &fTeam: &#D27AFF%teams_tag%'
+      - ''
+      - '&#8144FA| &c☀ &fPlayers: &#FFFD5F%staffvanish_online%'
+      - '&#8144FA| &c⚐ &fTPS: &#45BBFF%server_tps_1%'
+      - ''
+      - '   &7configurator.apply'
+layout:
+  enabled: false
+ping-spoof:
+  enabled: false
+  value: 0
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: true
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+  inteam:
+    conditions:
+    - '%teams_inTeam%=true'
+    true: '%teams_tag% '
+    false: ''
+  rankName:
+    conditions:
+    - '%luckperms_groups%=founder'
+    true: '<color:#7b2cbf><b>Founder</b></color>'
+    false: '%condition:rankNameLeadDev%'
+  rankNameLeadDev:
+    conditions:
+    - '%luckperms_groups%=leaddev'
+    true: '<color:#a18dce><b>Lead Dev</b></color>'
+    false: '%condition:rankNameDeveloper%'
+  rankNameDeveloper:
+    conditions:
+    - '%luckperms_groups%=developer'
+    true: '<color:#FF55FF><b>Developer</b></color>'
+    false: '%condition:rankNameManager%'
+  rankNameManager:
+    conditions:
+    - '%luckperms_groups%=manager'
+    true: '<color:#AA0000><b>Manager</b></color>'
+    false: '%condition:rankNameAdmin%'
+  rankNameAdmin:
+    conditions:
+    - '%luckperms_groups%=admin'
+    true: '<color:#FF5555><b>Admin</b></color>'
+    false: '%condition:rankNameMod%'
+  rankNameMod:
+    conditions:
+    - '%luckperms_groups%=mod'
+    true: '<color:#55FFFF><b>Mod</b></color>'
+    false: '%condition:rankNameTester%'
+  rankNameTester:
+    conditions:
+    - '%luckperms_groups%=tester'
+    true: '<color:#5555FF><b>Tester</b></color>'
+    false: '%condition:rankNameYouTube%'
+  rankNameYouTube:
+    conditions:
+    - '%luckperms_groups%=youtube'
+    true: '<color:#FF0000><b>You</b></color><color:#FFFFFF><b>Tube</b></color>'
+    false: '%condition:rankNameTwitch%'
+  rankNameTwitch:
+    conditions:
+    - '%luckperms_groups%=twitch'
+    true: '<color:#6441a5><b>Twitch</b></color>'
+    false: '%condition:rankNameCreator%'
+  rankNameCreator:
+    conditions:
+    - '%luckperms_groups%=creator'
+    true: '<color:#AA00AA><b>Creator</b></color>'
+    false: '<color:#55FF55><b>Member</b></color>'
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%teams_name%': 500
+  '%teams_online%': 1000
+  '%teams_tag%': 500
+  '%teams_color%': 500
+  '%teams_inTeam%': 500
+  '%teams_tag%': 50
+  '%teams_tag%': 50
+  '%teams_tag%': 500
+  '%vcolor_name%': 200
+  '%online%': 1000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%luckperms_groups%': 1000
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- founder
+- manager
+- admin
+- leaddev
+- developer
+- mod
+- tester
+- twitch
+- youtube
+- creator
+- custom
+- default
+permission-refresh-interval: 1000
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+proxy-support:
+  enabled: true
+  channel-name-suffix: TAB
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: redis://:password@localhost:6379/0
+  rabbitmq:
+    exchange: plugin
+    url: amqp://guest:guest@localhost:5672/%2F
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+config-version: 5
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+compensate-for-packetevents-bug: false
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
+placeholder-refresh-intervals:
+  "%vcr_prefix%": 1

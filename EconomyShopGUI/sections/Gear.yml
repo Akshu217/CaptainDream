@@ -1,0 +1,5 @@
+enable: true
+item:
+  material: TOTEM_OF_UNDYING
+  displayname: '&6Gear Shop'
+slot: 12

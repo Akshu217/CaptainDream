@@ -1,0 +1,7 @@
+[2026-04-18 09:13:10] - Zyric_ sold 64 x Sugar Cane(Farming.page1.items.25) for ₹1.92 with the sell all command.
+[2026-04-18 09:47:51] - Zyric_ bought 33 x Wheat Seeds(Farming.page1.items.29) for ₹99.00 with the buy screen.
+[2026-05-01 11:14:30] - CaptainDream_ bought 17 x Totem(Gear.page1.items.1) for $ 25,500.00 with the buy screen.
+[2026-05-01 11:14:38] - CaptainDream_ bought 32 x Obsidian(Gear.page1.items.6) for $ 6,000.00 with the buy screen.
+[2026-05-01 11:14:47] - CaptainDream_ bought 2 x Bat Spawner(Spawners.page1.items.3) for $ 20,000.00 with the buy screen.
+[2026-05-01 11:14:58] - CaptainDream_ bought 17 x Golden Carrot(Food.page1.items.8) for $ 207.39 with the buy screen.
+[2026-05-01 11:15:07] - CaptainDream_ bought 4 x Netherite Ingot(Ores.page1.items.20) for $ 9,470.48 with the buy screen.

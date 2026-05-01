@@ -1,0 +1,13 @@
+{
+  "cpuName": "AMD Ryzen 7 5700X 8-Core Processor",
+  "cpuMicroarchitecture": "Zen 3",
+  "cpuVendorFreq": -1,
+  "logicalCores": 16,
+  "physicalCores": 8,
+  "totalMemory": 134552907776,
+  "pageSize": 4096,
+  "memoryType": "Unknown",
+  "diskCount": 3,
+  "partitionCount": 5,
+  "networkInterfaceCount": 1
+}
