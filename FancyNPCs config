@@ -1,0 +1,60 @@
+  96392176-dad9-4e56-8c68-634d8f843ebc:
+    name: warps
+    creator: 27553e87-a63d-3368-bc54-62710cf9cc6c
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: 6130.935392581359
+      y: 64.0
+      z: -2379.555017897357
+      yaw: -22.753418
+      pitch: 19.349905
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: yellow
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      mirrorSkin: true
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: warps
+  56e3ef88-0e9d-4419-a32a-4a586b3ee03f:
+    name: leaderboard
+    creator: 27553e87-a63d-3368-bc54-62710cf9cc6c
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: 6135.047354057625
+      y: 64.0
+      z: -2379.8778965866836
+      yaw: 31.848022
+      pitch: 15.899981
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: dark_aqua
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    visibility: ALL
+    skin:
+      mirrorSkin: true
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: leaderboard
